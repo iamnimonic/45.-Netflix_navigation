@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    /* background-color: dimgrey; */
+}
+
+.logo-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+strong {
+    color: rgb(25,10,10);
+    display: block;
+    font-size: 3rem;
+    margin: 1rem 0 0 0;
+    font-weight: 400;
+    padding: 0;
+}
+
+p {
+    transform: translateX(2px);
+    font-size: 1.4rem;
+    padding: 0;
+    display: block;
+    margin: 0;
+    letter-spacing: .2rem;
+}
+
+.close {
+    top: 4rem;
+    right: 4rem;
+    font-size: 2rem;
+    position: absolute;
+}
+
+.nav-drawer ul {
+    list-style-type: none;
+    padding: 3rem 0;
+}
+
+.nav-drawer li {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    font-size: 2rem;
+    transform: scale(1);
+    opacity: .7;
+    z-index: 0;
+}
+
+.nav-bar:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.nav-bar:active {
+    transform: scale(1) translateY(2px);
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    box-shadow: 0 0 8px rgba(0,0,0,.4);
+    transition: transform .3s ease-in-out;
+}
+
+.nav.visible {
+    transform: translateX(0);
+}
+
+.nav-drawer {
+    background-color: floralwhite;
+    transition-delay: 0s;
+    padding: 3rem;
+    width: 95%;
+}
+
+.nav-black {
+    background-color: black;
+    width: 35vw;
+    min-width: 320px;
+    transition-delay: .4s;
+}
+
+.nav-black.visible {
+    transition-delay: 0s;
+}
+
+.nav-drawer.visible {
+    transition-delay: .4s;
+}
+
+.nav-red {
+    background-color: red;
+    transition-delay: .2s;
+    width: 95%;
+}
+
